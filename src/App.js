@@ -4,6 +4,7 @@ import store from "./components/redux/store/store";
 
 import logo from './logo.svg';
 import './App.css';
+import Main from './components/screens/01-main/main.js'
 
 class App extends Component {
   render() {
@@ -13,9 +14,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" style={{float: 'left', marginLeft: '-15px'}}/>
           <h1 className="App-title" style={{float: 'left', marginTop:'30px', marginLeft: '-20px'}}>Itemize</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Main />
       </div>
     );
   }
