@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import './zstyles.css'
-class Main extends Component {
 
+class LangDetectForm extends Component {
     render() {
-        return(
-        <div id='main'>
-            <form>
-        
+        return (
+          
+            <form>        
                 <legend>Personalia:</legend>
                 <input type="text" placeholder="Enter Name" className="control"/>
 
@@ -17,9 +16,9 @@ class Main extends Component {
             
                 <textarea className="control"/>
             </form>
-        </div>
-        )
+        
+        );
     }
 }
 
-export default Main;
+export default LangDetectForm;

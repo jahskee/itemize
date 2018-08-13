@@ -4,7 +4,7 @@ import store from "./components/redux/store/store";
 
 import logo from './logo.svg';
 import './App.css';
-import Main from './components/screens/01-main/main.js'
+import Main from 'components/screens/main/main';
 
 class App extends Component {
   render() {
@@ -15,8 +15,7 @@ class App extends Component {
           <h1 className="App-title" style={{float: 'left', marginTop:'30px', marginLeft: '-20px'}}>Itemize</h1>
         </header>
         <Main />
-        <footer style={{width: '100%', height: '5%'}}> test
-        </footer>
+       
       </div>
     );
   }
