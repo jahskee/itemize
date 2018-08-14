@@ -6,6 +6,8 @@
    in the message box. 
 
 ## Installation & Run
+
    yarn
+   
    yarn start
 
