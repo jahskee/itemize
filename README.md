@@ -17,7 +17,7 @@
 ## Notes
 
    * NODE_PATH was set to src/
-   * I used api.js to separate concerns.
+   * File api.js all restful calls go thru this object.
 
 ## Some Delays
    There is a delay in my coding, because I always setup redux.

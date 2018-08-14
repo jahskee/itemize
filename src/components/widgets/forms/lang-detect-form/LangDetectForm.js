@@ -3,19 +3,22 @@ import "./zstyles.css";
 
 import API from "components/api/api";
 
+/*
+The purpose of this form widget is to detect the language information
+about an input String.
+*/
 class LangDetectForm extends Component {
   state = {
     enteredString: "",
     message: ""
   };
 
+  /* When form is submitted get the language info */
   handleSubmit = async event => {
     event.preventDefault();
 
     const result = await API.getLanguageInfo(this.state.enteredString);
     const message = JSON.stringify(result);
-
-    // alert(message);
     this.setState({ message: message });
   };
 
@@ -29,9 +32,11 @@ class LangDetectForm extends Component {
     this.setState({ enteredString: event.target.value });
   };
 
+  // set focus to input box using refs callback.
   componentDidMount() {
     this.enteredString.focus();
   }
+
   render() {
     return (
       <div id="lang-detect-form">
