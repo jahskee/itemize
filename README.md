@@ -1,8 +1,7 @@
 # Language Detection App
 
 ## Video
-   https://goo.gl/E3DQtz
-
+[![IMAGE ALT TEXT HERE](https://image.ibb.co/h8LNGU/exam_chris.png)](https://www.youtube.com/watch?v=qqUjoxrBM4U&feature=youtu.be)
 ## What does it do?
    The application detects information about the language 
    based on the entered string. Then it will display information
@@ -18,8 +17,10 @@
 
    * NODE_PATH was set to src/
    * File api.js all restful calls go thru this object.
+   * Please ignore the Redux code.
 
-## Some Delays
-   There is a delay in my coding, because I always setup redux.
-   I realized, it is not needed because the application is simple.
 
+
+Thank you for your time!
+
+Jaizon
