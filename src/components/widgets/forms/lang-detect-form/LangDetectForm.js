@@ -9,11 +9,20 @@ class LangDetectForm extends Component {
         message: 'hello',        
     };
 
+    /*
+    {"success":true,
+    "results":[{"language_code":"sot","language_name":"Sotho","probability":3,"percentage":100,
+    "reliable_result":false}]}
+    */
+
     handleSubmit = async (event) => {
         event.preventDefault();
-        alert('submit pressed');
-        const result = await API.getLanguageInfo('helloworld');
-        alert(JSON.stringify(result));
+       
+        const result = await (API.getLanguageInfo(this.state.enteredString));
+        const message = JSON.stringify(result);     
+      
+       // alert(message);
+        this.setState({message: message});
     }
 
     handleReset = (event) => {

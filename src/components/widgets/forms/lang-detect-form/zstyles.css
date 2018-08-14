@@ -24,6 +24,10 @@ input[type='text'] {
 
 textarea {
     margin-top: 20px;
+    white-space: normal;
+    text-align: justify;
+    -moz-text-align-last: center; /* Firefox 12+ */
+    text-align-last: center;
 }
 
 .control > button {
