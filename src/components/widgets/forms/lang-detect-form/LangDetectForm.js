@@ -5,8 +5,8 @@ import API from 'components/api/api';
 
 class LangDetectForm extends Component {
     state = {
-        enteredString: 'sd',
-        message: 'hello',        
+        enteredString: '',
+        message: '',        
     };
 
     /*
